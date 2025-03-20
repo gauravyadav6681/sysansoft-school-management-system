@@ -12,6 +12,7 @@ import jakarta.persistence.Table;
 
 import java.util.Collection;
 import jakarta.persistence.*;
+import java.util.Collections;
 import java.util.List;
 
 @Entity
