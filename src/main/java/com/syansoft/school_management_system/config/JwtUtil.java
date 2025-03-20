@@ -1,11 +1,8 @@
 package com.syansoft.school_management_system.config;
-
-
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
-
 import java.security.Key;
 import java.util.Date;
 import java.util.function.Function;
@@ -20,9 +17,6 @@ public class JwtUtil {
         return Keys.hmacShaKeyFor(SECRET_KEY.getBytes());
     }
 
-    
-  
-    
     // Generate Token
     public String generateToken(UserDetails userDetails) {
         return Jwts.builder()
